@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+.menu-header {
+    background: url('https://preview.colorlib.com/theme/pato/images/header-menu-01.jpg') center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+.menu-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.menu-dinner {
+    background: rgb(91, 90, 90);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.menu-dinner img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.menu-toggle:checked ~ .menu-section {
+    display: block;
+}
+@media (max-width: 768px) {
+    .menu-dinner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-dinner img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
